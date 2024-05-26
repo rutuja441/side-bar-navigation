@@ -1,8 +1,10 @@
+/* Body Styles */
 body {
     display: flex;
     margin: 0;
     font-family: Arial, sans-serif;
 }
+/*sidebar style*/
 .sidebar {
     width: 250px;
     background-color: #333;
@@ -14,4 +16,32 @@ body {
 .sidebar ul {
     padding: 0;
     margin: 0;
+}
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.sidebar ul li a span {
+    margin-right: 10px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content div {
+    display: none;
+}
+
+.content div:target {
+    display: block;
 }
